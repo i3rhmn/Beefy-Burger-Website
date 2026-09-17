@@ -1,0 +1,547 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 2em;
+    background-color: #ffcb05;
+    color: #2c2c2c;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    background: #2c2c2c;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 1.5em;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffcb05;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: #e8e8e8;
+  }
+  
+  .hero img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 0.6em;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Welcome Message Styling */
+  .hero p {
+    margin-top: 2em;
+    font-size: 2em; /* Increase font size */
+    color: #2c2c2c; /* Darker color for better contrast */
+    font-weight: bold; /* Make it more prominent */
+    font-family: 'Arial', sans-serif; /* Use a modern font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
+    background: #ffcb05; /* Highlight background */
+    display: inline-block; /* Fit content */
+    padding: 0.5em 1em; /* Add some padding */
+    border-radius: 0.4em; /* Rounded corners for modern look */
+  }
+  
+  
+  /* Form Section */
+  .register-form {
+    background-color: #ffffff;
+    padding: 2em;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 25em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+  
+  .register-form label {
+    display: block;
+    margin: 1em 0 0.5em;
+    font-size: 1em;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.4em;
+    font-size: 1em;
+  }
+  
+  /* Input Error Highlight */
+  .register-form input.error {
+    border: 0.1em solid red;
+    background-color: #ffe6e6;
+  }
+  
+  /* Input Valid Highlight */
+  .register-form input.valid {
+    border: 0.1em solid green;
+    background-color: #e6ffe6;
+  }
+  
+  .register-form button {
+    display: block;
+    width: 100%;
+    background-color: #ffcb05;
+    color: #2c2c2c;
+    padding: 1em;
+    border: none;
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .register-form button:hover {
+    background-color: #e8b604;
+  }
+  
+  #formMessage {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1em;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    background: #2c2c2c;
+    color: #ffcb05;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 1em;
+  }
+
+  /* About Us Section Styling */
+.about {
+    padding: 3em 2em;
+    background-color: #ffffff;
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  .about-photo {
+    margin-bottom: 1.5em;
+  }
+  
+  .about-photo img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    color: #ffcb05;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1.5em;
+  }
+  /* Vision and Mission Section */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensure both boxes are aligned and have the same height */
+    gap: 2em;
+    margin: 3em auto;
+    max-width: 800px;
+  }
+  
+  .vision, .mission {
+    background-color: #e8e8e8;
+    padding: 2em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    flex: 1; /* Allows both boxes to stretch evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures that the content in each box is evenly distributed */
+  }
+  
+  .vision h3, .mission h3 {
+    font-size: 2em;
+    color: #2c2c2c;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .vision p, .mission p {
+    font-size: 1.1em;
+    color: #555;
+  }
+
+  /* Menu Section Styling */
+.menu {
+    padding: 3em 2em;
+    background-color: #ffffff;
+    margin: 2em auto;
+    max-width: 1000px;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .menu h2 {
+    font-size: 2.5em;
+    color: #ffcb05;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+  
+  /* Individual Menu Item */
+  .menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #e8e8e8;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 0.6em;
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-details {
+    text-align: left;
+  }
+  
+  .menu-item-details h3 {
+    font-size: 1.8em;
+    color: #2c2c2c;
+    margin-bottom: 0.5em;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    color: #e8b604;
+    margin-bottom: 0.5em;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: #e8b604;
+  }
+  
+  /* Staff Section Styling */
+.staff {
+    padding: 3em 2em;
+    background-color: #ffffff;
+    margin: 2em auto;
+    max-width: 1000px;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .staff h2 {
+    font-size: 2.5em;
+    color: #ffcb05;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+  
+  /* Individual Staff Member */
+  .staff-member {
+    display: flex;
+    align-items: center;
+    background-color: #e8e8e8;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .staff-member img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
+  }
+  
+  .staff-details {
+    text-align: left;
+  }
+  
+  .staff-details h3 {
+    font-size: 1.8em;
+    color: #2c2c2c;
+    margin-bottom: 0.3em;
+  }
+  
+  .staff-details .role {
+    font-size: 1.2em;
+    color: #e8b604;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .staff-details p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: #e8b604;
+  }
+  
+
+
+/* Making of Section Styling */
+.making-of {
+    padding: 3em 2em;
+    background-color: #ffffff;
+    margin: 2em auto;
+    max-width: 1000px;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .making-of h2 {
+    font-size: 2.5em;
+    color: #ffcb05;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .design-impact, .code-impact {
+    margin-bottom: 3em;
+  }
+  
+  .design-impact h3, .code-impact h3 {
+    font-size: 2em;
+    color: #2c2c2c;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .mockup-placeholder {
+    background-color: #e8e8e8;
+    border-radius: 0.6em;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    border: 1px dashed #ccc;
+  }
+  
+  .mockup-placeholder p {
+    margin: 0;
+  }
+  
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: #e8b604;
+  }
+  
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ffcb05;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Bar Styling */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2c2c2c;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover, nav ul li a.active {
+    color: #ffcb05;
+  }
+  
+  /* Our Story Section */
+  .our-story {
+    padding: 3em 2em;
+    background-color: #ffffff;
+    margin: 2em auto;
+    max-width: 1000px;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  .our-story h2 {
+    font-size: 2em;
+    color: #ffcb05;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .reflection h3 {
+    font-size: 2em;
+    color: #2c2c2c;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .reflection p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .our-story {
+      padding: 2em 1em;
+      max-width: 90%;
+    }
+  
+    .our-story h2 {
+      font-size: 2em;
+    }
+  
+    .reflection h3 {
+      font-size: 1.6em;
+    }
+  
+    .reflection p {
+      font-size: 1em;
+    }
+  }
+
+
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a, nav ul li span {
+    padding: 0.5em 1em;
+    color: #ffcb05;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+
+
+  #userNameDisplay {
+    float: right;
+    margin-left: 1em;
+    color: #ffcb05; /* Yellow text color */
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  
+  
+  
+  

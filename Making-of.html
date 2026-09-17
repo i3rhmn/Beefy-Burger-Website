@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making of - Beefy Burger</title>
+  <link rel="stylesheet" href="Styling/Style.css">
+</head>
+<body>
+  <header>
+    <h1>Beefy Burger</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="staff.html">Staff</a></li>     
+        <li><a href="making-of.html" class="active">Making of</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reg.html">Register</a></li>
+        <li id="userNameDisplay"></li>
+      </ul>
+  </nav>
+
+  <main>
+    <section class="making-of">
+      <h2>The Making of Beefy Burger Website</h2>
+
+      <!-- Section for Design Decisions -->
+      <div class="design-impact">
+        <h3>Impact of Design and Color Choices</h3>
+        <p>Our design process focused on creating a consistent and appealing visual experience that embodies the fun and friendly atmosphere of Beefy Burger. We selected warm colors, primarily a shade of <b>yellow (#ffcb05)</b>, which evokes happiness, appetite, and energy — qualities we wanted our brand to convey.</p>
+        <p>The use of neutral tones like <b>#2c2c2c (dark grey)</b> and <b>#e8e8e8 (light grey)</b> allowed us to emphasize the brand color without overwhelming the user. This combination ensures that all components of the website are readable, visually balanced, and make key elements pop.</p>
+
+        <!-- Placeholder for Photo -->
+        <div class="mockup-placeholder">
+          <p><strong>Insert Mockup Here:</strong> Insert a photo showing initial color choices and how they evolved during the project.</p>
+        </div>
+
+        <p>The fonts were chosen for readability and consistency. We used <b>Arial, sans-serif</b>, a clean and commonly available font, to ensure text is legible across all devices. Typography and consistent use of <b>bold headers</b> also help organize the content, making it easier for users to find what they need quickly.</p>
+
+        <!-- Placeholder for Photo -->
+        <div class="mockup-placeholder">
+          <p><strong>Insert Mockup Here:</strong> Insert a screenshot of typography examples and color usage across different pages.</p>
+        </div>
+      </div>
+
+      <!-- Section for Impact of Code Choices -->
+      <div class="code-impact">
+        <h3>Impact of HTML, CSS, and JS Code on Maintainability</h3>
+        <p>We structured our HTML with semantic elements, such as <b>header</b>, <b>nav</b>, <b>main</b>, and <b>section</b> to ensure the content is easily understood by developers and screen readers alike. This also makes the website easier to maintain because each part of the document is clearly defined.</p>
+        <p>The <b>CSS</b> was written with <b>modular classes</b> that can be reused across different pages to maintain consistency. By using consistent class names like <b>`.menu-item`, `.staff-member`, and `.hero`</b>, we ensured styling is centralized and manageable. Adding or modifying styles for one component propagates across all similar components, which saves time and effort in the long run.</p>
+
+        <!-- Placeholder for Photo -->
+        <div class="mockup-placeholder">
+          <p><strong>Insert Mockup Here:</strong> Insert a screenshot of the HTML structure showing use of semantic tags and modular classes.</p>
+        </div>
+
+        <p>Using <b>JavaScript</b> for form validation and dynamic features helps enhance user experience while keeping the code maintainable. We used simple, easy-to-read functions that handle real-time validation feedback for users. By placing JavaScript in a separate file (`script.js`), it is easy to modify or extend the functionality without affecting the main HTML structure.</p>
+
+        <!-- Placeholder for Photo -->
+        <div class="mockup-placeholder">
+          <p><strong>Insert Mockup Here:</strong> Insert a screenshot of the JavaScript code with comments explaining validation features.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: info@beefyburger.com | 555-1234</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
